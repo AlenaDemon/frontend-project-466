@@ -2,7 +2,7 @@
 
 import { Command } from 'commander';
 import app from '../src/index.js';
-import fs from 'fs'
+
 const program = new Command();
 
 program
@@ -16,8 +16,7 @@ program
   .argument('<filepath2>')
   .action((first, second) => {
     console.log(app(first, second));
-
   })
-  .option('-f, --format [type]', 'output format')
+  .option('-f, --format [type]', 'output format');
 
 program.parse();
