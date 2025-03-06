@@ -3,9 +3,12 @@
   "type": "module",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/AlenaDemon/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AlenaDemon/frontend-project-46/actions)",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
     "@eslint/create-config": "^1.0.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.31.0"
+    "eslint-plugin-import": "^2.31.0",
+    "jest": "^29.7.0"
   }
 }
